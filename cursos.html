@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+</head>
+<body>
+    <header>
+    <h2>Inscripción de cursos</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="lenguajes.html">Lenguajes</a></li>
+            <li><a href="validacion.html">Validaciones</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Formulario</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br><br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+                <br><br>
+                <label for="dni">Documento de Identidad:</label>
+                <input type="number" id="dni" name="dni" pattern="[0-9]{8}" maxlength="8" required>
+                <br><br>
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                <br><br>
+                <label for="curso">Selecciona un curso:</label>
+                <br>
+                <input type="radio" id="html" name="curso" value="html">
+                <label for="html">Desarrollo Web con HTML</label>
+                <br>
+                <input type="radio" id="css" name="curso" value="css">
+                <label for="css">Diseño con CSS</label>
+                <br>
+                <input type="radio" id="javascript" name="curso" value="javascript">
+                <label for="javascript">Programacion con JavaScript</label>
+                <br><br>
+                <label for="modalidad">Selecciona una modalidad</label>
+                <input type="radio" id="presencial" name="modalidad" value="Presencial">
+                <label for="presencial">Presencial</label>
+                <input type="radio" id="virtual" name="modalidad" value="Virtual">
+                <label for="virtual">Virtual</label>
+                <br><br>
+                <label for="horarios">Horarios disponibles:</label>
+                <input type="checkbox" id="mañana" name="horarios" value="Mañana">
+                <label for="mañana">Mañana</label>
+                <input type="checkbox" id="tarde" name="horarios" value="Tarde">
+                <label for="tarde">Tarde</label>
+                <input type="checkbox" id="noche" name="horarios" value="Noche">
+                <label for="noche">Noche</label>
+                <br><br>
+                <label>Comentarios Adicionales:</label>
+                <textarea name="comentarios" placeholder="Escribe tu mensaje"></textarea>
+                <br><br>
+                <button type="submit">Enviar</button>
+                <button type="submit">Restablecer</button>
+                </fieldset>
+        </form>
+    </main>
+</body>
+</html>
